@@ -55,6 +55,10 @@
 #include "misc.h"
 #include "actions.h"
 
+#ifdef __PASE__
+#include "atfuncs.cinc"
+#endif
+
 void (*action)(const char *) = NULL;
 unsigned int notmoved = 0, notremoved = 0;
 
